@@ -3,5 +3,25 @@ body{
 }
 
 .container{
- justify-content: center;
+ margin: auto;
+ text-align: left;
+ padding: 15px;
+ background-color: blue;
+ color: white;
+}
+
+@media screen and (min-width: 1440px){
+    body{
+        width: 1440px;
+        font-size: 15px;
+        margin: 0 auto;
+    }
+}
+
+@media screen and (min-width: 375px){
+    body{
+        width: 375px;
+        font-size: 15px;
+        margin: 0 auto;
+    }
 }
