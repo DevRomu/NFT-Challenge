@@ -2,26 +2,47 @@ body{
     font-family: "Poppins", "Helvetica Neue", Helvetica, Arial;
 }
 
+.Title{
+  font-size: 24px;
+  font-weight: bold;
+}
+
 .container{
+ display: flex;
  margin: auto;
- text-align: left;
- padding: 15px;
- background-color: blue;
- color: white;
+ justify-content: center;
+ align-items: center;
+ height: 100vh;
+}
+
+.centered-image{
+    object-fit: contain;
+    border-radius: 14px;
+}
+
+.card{
+    border-radius: 14px;
+    padding: 24px;
+    background-color: blue;
+    color: white;
 }
 
 @media screen and (min-width: 1440px){
     body{
+
         width: 1440px;
         font-size: 15px;
+        justify-content: center;
         margin: 0 auto;
     }
 }
 
 @media screen and (min-width: 375px){
     body{
+
         width: 375px;
         font-size: 15px;
+        justify-content: center;
         margin: 0 auto;
     }
 }
