@@ -3,18 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- displays site properly based on user's device -->
-
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="./images/favicon-32x32.png"
-    />
-
     <title>Frontend Mentor | NFT preview card component</title>
-
-    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
     <style>
       @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,400;0,700;1,500;1,600;1,800&display=swap");
       .attribution {
@@ -22,7 +12,7 @@
         text-align: center;
       }
       .attribution a {
-        color: hsl(228, 45%, 44%);
+        color: hsl(0, 0%, 100%);
       }
     </style>
     <link rel="stylesheet" href="index.css" />
@@ -30,21 +20,28 @@
   <body>
     <div class="container">
       <div class="card">
-        <img src="images/image-equilibrium.jpg" alt="Image" class="centered-image">
+        <img src="images/image-equilibrium.jpg" alt="Image" class="centered-image"/>
         <p class="Title">Equilibrium #3429</p>
         <p class="Paragraph">
           Our Equilibrium collection promotes balance and calm.
         </p>
-        <p class="price">0.041 ETH 3 days left</p>
-        <p class="Creator">Creation of Jules Wyvern</p>
+        <p class="Price">
+          <img src="images/icon-ethereum.svg" class="eth" /> 0.041 ETH
+          <span class="Days_Left">
+            <img src="images/icon-clock.svg" class="clock" /> 3 days left
+          </span>
+        </p>
+        <p class="Creator">
+          <img src="images/image-avatar.png" class="avatar" /> Creation of <span class="Creator_Sentence">Jules Wyvern</span>
+        </p>
       </div>
-    </div>
-    <div class="attribution">
-      Challenge by
-      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
-        >Frontend Mentor</a
-      >. Coded by
-      <a href="https://github.com/DevRomu/NFT-Challenge">Rhomill Orina</a>.
+      <div class="attribution">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a
+        >. Coded by
+        <a href="https://github.com/DevRomu/NFT-Challenge">Rhomill Orina</a>.
+      </div>
     </div>
   </body>
 </html>
