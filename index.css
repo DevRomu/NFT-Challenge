@@ -14,13 +14,17 @@ body {
   }
   
   .container {
+    position: relative;
+    width: 200;
     display: inline;
-    max-width: 300px;
+    max-width: 350px;
   }
   
   .centered-image {
-    width: 100%;
+    width: 302px;
+    height: 302px;
     border-radius: 12px;
+    overflow: hidden;
   }
   
   .card {
@@ -70,34 +74,41 @@ body {
     align-items: center;
     gap: 2px;
    }
-   
-   .Title:hover {
+
+   .image_effect{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 4.5%;
+    bottom: 4.5%;
+    right: 7%;
+    left: 7%;
+    width: 302px;
+    height: 302px;
+    border-radius: 12px;
+    background-color: hsl(178, 100%, 50%);
+    opacity: 0;
+    border-radius: 8px;
+    transition: opacity 0.5s;
+   }
+   .image:hover .image_effect{
+    opacity: 0.5;
+   }
+
+   .Title:hover{
     color: hsl(178, 100%, 50%);
   }
   
-  .Creator_Sentence:hover {
+  .Creator_Sentence:hover{
     color: hsl(178, 100%, 50%);
   }
 
-  .image_effect{
-   display: flex;
-   justify-content: center;
-   align-items: center;
-   position: absolute;
-   top: 0;
-   left: 0;
-   right: 0;
-   height: 100%;
-   width: 100%;
-   opacity: 0;
-   transition: 0.5s;
-   background-color: #00FFF8;
-   border-radius: 8px;
-  }
-
   .view{
-    width: 48px;
-    height: 48px;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
   }
 
   @media screen and (min-width: 1440px) {
